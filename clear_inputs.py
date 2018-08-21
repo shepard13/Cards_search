@@ -1,4 +1,3 @@
-
 def clear_inputs(inp_dict):
     clear_dict = {
         'min_price': None,
@@ -11,12 +10,10 @@ def clear_inputs(inp_dict):
         'is_nvidia_family': None,
     }
 
-
     row_min_price = inp_dict['min_price']
     if row_min_price.isdigit():
         if row_min_price:
             clear_dict['min_price'] = int(row_min_price)
-
 
     row_max_price = inp_dict['max_price']
     if row_max_price.isdigit():
