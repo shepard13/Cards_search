@@ -1,6 +1,9 @@
 
 
 def is_card_suitable(card, clear_dict):
+    if clear_dict['manufacturer'] is not None:
+        if not clear_dict['manufacturer'] in card['manufacturer']:
+            return False
     if clear_dict['min_price'] is not None:
         if clear_dict['min_price'] > card['price']:
             return False
